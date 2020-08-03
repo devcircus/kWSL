@@ -1,5 +1,5 @@
 @ECHO OFF
-SET GITORG=DesktopECHO
+SET GITORG=devcircus
 SET GITPRJ=kWSL
 SET BASE=https://github.com/%GITORG%/%GITPRJ%/raw/master
 REM ## UAC Check 
@@ -16,7 +16,7 @@ REM ## Enable WSL
 POWERSHELL.EXE -command "Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 
 REM ## Set WSL1 and TimeStamp
-WSL.EXE --set-default-version 1 > NUL
+WSL.EXE --set-default-version 2 > NUL
 CLS && SET RUNSTART=%date% @ %time%
 
 REM ## Determine ideal DPI
