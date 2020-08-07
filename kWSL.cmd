@@ -16,7 +16,7 @@ REM ## Enable WSL
 POWERSHELL.EXE -command "Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 
 REM ## Set WSL1 and TimeStamp
-WSL.EXE --set-default-version 2 > NUL
+WSL.EXE --set-default-version 1 > NUL
 CLS && SET RUNSTART=%date% @ %time%
 
 REM ## Determine ideal DPI
